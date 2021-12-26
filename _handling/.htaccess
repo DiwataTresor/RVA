@@ -1,0 +1,18 @@
+
+RewriteEngine on
+
+RewriteRule ^RVA?$ index.php
+RewriteRule ^RVA?$ index.php
+RewriteRule ^FACTURATION?$ mainpage.php
+
+RewriteRule ^FACTURATION?$ mainpage.php
+RewriteRule ^apropos?$ af-apropos.php
+RewriteRule ^param?$ para.php
+RewriteRule ^param?$ para.php
+RewriteRule ^telechargement/?$ aff-telechargement.php
+RewriteRule ^telechargement?$ aff-telechargement.php
+
+RewriteRule ^param/([0-9]+)$ para.php?id=$1    
+
+ErrorDocument 404 http://192.168.88.50:8888/_handling/
+
